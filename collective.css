@@ -1,162 +1,94 @@
 /*There are notes partaining to show where a sepate css file may be placed for*/
 /* mainbody portion */
   html {
-  font-size:16px;
-}
- body.solid {
+	margin: auto;
+	font-size: 1em;
+	min-width: fit-content;
+	max-width: 98vw;
+	height: auto;
 	background: #3B3B3B center;
-	max-width: 99%;
-	min-width: 98%;
-	max-height: 100vh;
-	min-height: 30vh;
+	overflow-x:clip;
+	justify-content: center;
 }
 header {
-	gap: 0.2rem;
-	margin: 0 0.2px 0.2rem 0.2px;
-}
-h1 {
-	font-size: 3.2rem;
-	margin: 0.2rem 0 0 0;
 	display: block;
-	text-align: center;
+	font-size: 4em;
+	white-space: nowrap;
 	color: #B8B8B8;
-}
-#head {
-	font-size: 2rem;
+	margin: 0.2rem auto;
 	user-select: none;
-	align-items: center;
-	justify-content: center;
-	font-size: 98%;
-	height: auto;
-	display: block;
-	margin: 0.2rem 0 0.2rem 0;
-	padding: 0 0 0.2rem 0;
-}
-#solid {
-	display: block;
-	overflow: visable;
-	margin: 0 0.2px 0.2rem 0.2px;
-	max-width: 98vw;
-	min-width: 98vw;
-	gap: 0.2rem;
-	height:auto;
-}
-#center-solid {
-	border: none;
-	overflow: hidden;
-	min-width: 98%;
-	min-height: 3%;
-	max-height: 3vw;
-	display: block;
-	margin:0.2rem auto 0.2rem auto;
-	padding:0 0 0 0;
-}
-div.foot {
-	font-size: 16px;
-	height: 0.5rem;
-	width: auto;
-	user-select: none;
-	bottom: 0.4rem;
-}
-p.policy {
-	margin: 0 auto 0.35rem auto;
 	text-align: center;
-	color: white;
-	line-height: 18px;
-	width: 20vw;
-}
-a.policy {
-	width: 10vw;
-	display: block;
-	margin: 0.2em auto 0.2em auto;
-	color: #00CFCF;
-	text-align: center;
-	text-decoration: none;
-	white-space: nowrap;
-	text-shadow: 0 0 1rem #000000;
-}
-a.policy:hover {
-	width: 10vw;
-	max-height: auto;
-	min-height: auto;
-	background-color: none;
-	opacity: 1.5;
-}
-div.rightsbar {
-	border: none;
-	top: 0.02em;
-	margin: 0.2% auto 0 0.2%;
-	padding: 0.4% 0.2% 0 0.2rem;
-	width: 10%;
-	max-width: 10vw;
-	max-height: auto;
-	display: block;
-	white-space: nowrap;
 }
 /*Navigation bar*/
-ul.lock {
-	height: auto;
-	width:100%;
+nav {
+	display: block;
+	height: fit-content;
+	width:98%;
+	margin: 0 auto 0.8rem;
+	padding: 0;
+	top: 0;
+	overflow: hidden;
+	z-index: 2;
 	display: flex;
-	list-style-type: none;
-	margin: auto 0 auto 0;
-	padding: 0 0 0 0;
 	background: #6B6022;
+	list-style-type: none;
 	justify-content: center;
 }
- li.lock {
+nav li{
 	height: 100%;
-	width: 10%;
-	margin: 0 0.5em 0 0.5em;
+	width: fit-content;
+	margin: 0pc;
     float: center;
 }
- li.lock a {
-		Width: 100%;
-		text-align: center;
-		height: 100%;
-		font-size: 2vw;
-		display: block;
-		color: #A19C83;
-		padding: 0 0.625em 0 0.625em;
-		text-decoration: none;
-		white-space: nowrap;
+nav a{
+	font-size: 2.8rem;
+	Width: auto;
+	text-align: center;
+	height: 100%;
+	display: inline-block;
+	color: #A19C83;
+	padding: 0 0.625em;
+	text-decoration: none;
+	white-space: nowrap;
 }
-li.lock a:hover {
+nav a:hover {
   max-height: auto;
   min-height: auto;
   background-color: #2F3115;
 }
-/*main content*/
-#main {
-	margin: 0 0.4px 0.2rem 0.2px;
+/*Main Conent*/
+main {
+	display: block;
+	overflow: visable;
+	margin: 0.2rem auto;
+	width: 98%;
+	height:;
 	position: block;
-	background: #242424 center;
-	overflow: auto;
+	overflow: none;
 	display: flex;
 	gap: 0.2em;
 	border: .011em solid #B8B8B8;
-	padding: 0 0 0 0;
-	width: 100%;
-	height: auto;
+	background: #242424 center;
+	padding: 0;
 }
+/*left-side*/
 div.stand {
 	overflow: auto;
 	font-size: 8mm;
-	width: 87vw;
+	width: 95%;
 	max-height: auto;
-	height: auto;
-	display: flex;
+	height: 50rem;
+	display: block;
 	font-size: 0.8em;
+	margin: 0 auto 0 0;
 	border-right: 0.011em solid #B8B8B8;
-	margin: 0em auto 0em 0em;
 }
 div.smain {
-	overflow: scoll;
 	width: 100%;
 }
 .post {
-	margin: .8em .8em .2em .8em;
-	padding: .4em .4em .4em .4em;
+	margin: 0.4em 0.8em;
+	padding: .4em;
 	max-height: auto;
 	height: auto;
 	border: .01em solid #B8B8B8;
@@ -168,76 +100,111 @@ div.smain {
 #art_head {
 	white-space: nowrap;
 	font-size: 90%;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
+	margin: 0;
+	padding: 0;
 	text-indent: .7em;
+}
+#ind {
+	text-indent: 2rem;
+	font-size: 85%;
 }
 #ind-spaced {
 	text-indent: 2rem;
 	font-size: 85%;
 	line-height: 2.2rem;
 }
-#ind {
-	text-indent: 2rem;
-	font-size: 85%;
-}
 /*Right SideBar*/
+.rightsbar {
+	margin: 0.2%;
+	padding: 0.4%;
+	width: 10%;
+	min-width: fit-content;
+	max-height: auto;
+	display: block;
+	white-space: nowrap;
+}
 ul.sbar {
-	list-style-type: none;
-	margin: 0.2em 0 0.8rem auto;
-	padding: 0 0 0 0;
+	margin: 0.2em 0.2% 0.8em auto;
+	padding: 0;
+	top: 0.02em;
 	min-width: 100%;
 	max-height: auto;
 	border: .015em solid #B8B8B8;
 	display: block;
-	justify-content: center;
 	font-size: 1rem;
+	justify-content: center;
+	list-style-type: none;
 }
-li.inline-block{
-	margin: 0 0.2em 0 auto;
-	padding: 0 0 0 0;
-	max-width:10vw;
-}
-p.right-top {
+.sbar p{
+	line-height: 1.25em;
 	display: block;
-	text-indent: 1.4em;
 	user-select: none;
+	color: #D8D9D0;
+	text-align: center;
+	font-size: 1.2em;
+}
+p.parar-top {
 	border-bottom: 0.01em solid #B8B8B8;
 	margin: 0.02em 0em 0 0em;
-	color: #D8D9D0;
 }
-p.right {
-	display: block;
-	text-indent: 1.4em;
-	user-select: none;
+p.parar {
 	border-bottom: 0.011em solid #B8B8B8;
 	border-top: 0.01em solid #B8B8B8;
-	margin: 0 0em 0 0em;
-	color: #D8D9D0;
+	margin: 0;
 }
-p.contact {
-	text-align: center;
+.contact {
 	font-size-adjust: 1vw;
 	display: block;
-	text-indent: none;
 	border-bottom: 0.011em solid #B8B8B8;
 	border-top: 0.01em solid #B8B8B8;
-	margin: 0 0em 0 0em;
-	color: #D8D9D0;
+	margin: 0;
 }
-a.hyli {
+a.hypli {
 	display: block;
-	margin: 0.2em 1.2em 0.2em 1.2em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #5888b8;
+	white-space: nowrap;
+	margin: 0.4em 1.2em 0.4em 1.2em;
+	text-shadow: 0 0 1rem #000000;
+}
+a.hypli:hover {
+	max-height: auto;
+	min-height: auto;
+	background-color: #4d4326;
+	opacity: 1.5;
+}
+/*footer*/
+footer{
+	display: block;
+	font-size: 16px;
+	height: 0.5rem;
+	width: auto;
+	user-select: none;
+	bottom: 0.4rem;
+	position:unset;
+}
+footer a {
+	width: 10vw;
+	display: block;
+	margin: 0.2em auto;
 	color: #00CFCF;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
 	text-shadow: 0 0 1rem #000000;
 }
-a.hyli:hover {
+footer a:hover {
+	width: 10vw;
 	max-height: auto;
 	min-height: auto;
-	background-color: #664d00;
+	background-color: none;
 	opacity: 1.5;
+}
+footer p{
+	margin: 0 auto;
+	text-align: center;
+	color: white;
 }
 /*Copyright. Credit to Creator*/
